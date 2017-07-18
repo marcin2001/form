@@ -28,33 +28,58 @@
             float:right;
             margin-right:40px;
         }
+        .re{
+        	width: 90px;
+        	border-radius: 0px;
+        	height: 30px;
+        	margin-left: 100px;
+        	margin-right: auto;
+        	margin-top: 10px
+        }
+        .rw{
+        	width: 100px;
+        	border-radius: 0px;
+        	height: 30px;
+        	margin-left: auto;
+        	margin-right: auto;
+        	margin-top: 10px
+        }
     </style>
     <body>
         <form width="400px">
+        	<fieldset>
             <fieldset width="300">
             <legend>Реєстрація на курси</legend>
             <label for="f-n-client">Повне ім'я:</label><br>
-            <input type="text" name="Повне імя" id="f-n-client" autofocus>
+            <input type="text" name="Повне імя" id="f-n-client" autofocus required>
             <br>
             <label for="priz">Прізвище:</label><br>
-            <input type="text" name="Прізвище" id='priz'>
+            <input type="text" name="Прізвище" id='priz' required>
             <br><br>
                 <label for="r">Рік народження:</label>
-              <input type="number" name="" id="r" min="1980" max="2010" value='2000' class="er">
+              <input type="number" name="" id="r" min="1980" max="2010" value='2000' class="er" required>
             </fieldset>
             <br>
             <fieldset>
+            <legend>Контакти</legend>
             <label for="Email">Email:</label><br>
-            <input type="email" name="Email" id="Email">
+            <input type="email" name="Email" id="Email" required>
             <br>
             <label for="passw">Пароль:</label><br>
-            <input type="password" name="Пароль" id="passw">
+            <input type="password" name="Пароль" id="passw" required>
             
+
+
+
+
+
             <label for="namb">Номер телефона</label>
-            <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="namb" required
-            placeholder="0730578209">
+            <input type="tel" name="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="namb" value="" required
+            placeholder="XXX-XXX-XXXX">
             </fieldset>
-            <input type="submit" name="" value="Надіслати">
+            <input type="submit" name="" class="re" value="Надіслати">
+            
+            </fieldset>
         </form>
     </body>
 </html>
